@@ -8,9 +8,12 @@ const routerSignIn = require("./routes/routerSignIn/routerSignIn");
 const routerStore = require("./routes/routerStore/routerStore");
 const routerLogIn = require("./routes/routerLogin/routerLogIn");
 const routerLogOut = require("./routes/routerLogOut/routerLogOut");
+const routerInfo = require("./routes/routerInfo/routerInfo");
+const routerRandom = require("./routes/routerRandoms/routerRandoms");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
-const passport = require('passport')
+const passport = require('passport');
+
 
 
 app.use(
@@ -41,5 +44,7 @@ app.use("/", routerLogIn);
 app.use("/", routerSignIn);
 app.use("/", routerLogOut);
 app.use("/", routerError);
+app.use("/", routerInfo);
+app.use("/api", routerRandom);
 
 module.exports = app;
