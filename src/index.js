@@ -33,12 +33,10 @@ yargs.parse();
   const http = require("http");
   const PORT = yargs.argv.PORT || 8000;
   const server = http.createServer(app);
-  require("./config/configMongoDB");
-  require("./utils/passport/passport");
   server.listen(PORT, () => {
     console.log(`Servidor listo en el puerto ${PORT} ✅, pid:${process.pid}`);
   });
-
+ 
 
   
 }
