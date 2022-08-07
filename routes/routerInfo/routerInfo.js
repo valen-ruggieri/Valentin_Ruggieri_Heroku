@@ -3,7 +3,7 @@ const routerInfo = express.Router();
 const numCPUs = require('os').cpus().length
 const pid= process.pid
 routerInfo.get("/info", (req, res) => {
-  res.render('info.ejs',{numCPUs,pid})
+  res.send(`Number of proccess:${numCPUs} in ${pid}`)
 });
 
 module.exports = routerInfo;

@@ -1,23 +1,9 @@
-const yargs = require('yargs');
-const cluster = require('cluster')
-const numCPUs = require('os').cpus().length
-yargs.command({
-  command: "add port",
-  describe: "add number of port",
-  builder: {
-    PORT: {
-      describe: "number of port",
-      demandOption: true,
-      type: "number",
-    },
-  },
-  handler(argv) {
-    console.log(`PORT is: ${argv.PORT}`);
-  },
-});
-yargs.parse();
+require('dotenv').config()
 
- if (cluster.isMaster){
+const cluster =require('cluster')
+const numCPUs = require('os').cpus().length
+
+if (cluster.isMaster){
   console.log(`master ${process.pid} is running ...`);
   console.log(`Numero de procesadores: ${numCPUs}`)
      for(let i = 0 ; i< numCPUs ; i++ ){
@@ -28,15 +14,12 @@ yargs.parse();
     cluster.fork()
    })
  }else{
-
   const app = require("./app");
   const http = require("http");
-  const PORT = yargs.argv.PORT || 8000;
+  const PORT = process.env.PORT
   const server = http.createServer(app);
   server.listen(PORT, () => {
     console.log(`Servidor listo en el puerto ${PORT} ✅, pid:${process.pid}`);
   });
- 
-
-  
 }
+
