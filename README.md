@@ -8,20 +8,24 @@
 
 - Ejecutar el servidor (con los parámetros adecuados) utilizando Forever, verificando su correcta operación. Listar los procesos por Forever y por sistema operativo
 
-![Video de funcionamiento de la App](https://media.giphy.com/media/3OoL7bdO4zc4XbdKyE/giphy.gif)
+![Video de funcionamiento de la App](https://media.giphy.com/media/aIOed9lHGGgU9Ot7w5/giphy.gif)
 
 
 - Ejecutar el servidor (con los parámetros adecuados: modo FORK) utilizando PM2 en sus modos modo fork y cluster. Listar los procesos por PM2 y por sistema operativo.
 
-![Video de funcionamiento de la App](https://media.giphy.com/media/3OoL7bdO4zc4XbdKyE/giphy.gif)
+![Video de funcionamiento de la App](https://media.giphy.com/media/ll26pM9NBseNsSB2k0/giphy.gif)
 
-- Tanto en Forever como en PM2 permitir el modo escucha, para que la actualización del código del servidor se vea reflejado inmediatamente en todos los procesos.
+- En Forever permitir el modo escucha, para que la actualización del código del servidor se vea reflejado inmediatamente en todos los procesos.
 
-![Video de funcionamiento de la App](https://media.giphy.com/media/3OoL7bdO4zc4XbdKyE/giphy.gif)
+![Video de funcionamiento de la App](https://media.giphy.com/media/9Dx3pcsqMzSSNUszth/giphy.gif)
+
+- En PM2 permitir el modo escucha, para que la actualización del código del servidor se vea reflejado inmediatamente en todos los procesos.
+
+![Video de funcionamiento de la App](https://media.giphy.com/media/CrB2J9ylPibkYJtsT0/giphy.gif)
 
 - Hacer pruebas de finalización de procesos fork y cluster en los casos que corresponda.
 
-![Video de funcionamiento de la App](https://media.giphy.com/media/3OoL7bdO4zc4XbdKyE/giphy.gif)
+![Video de funcionamiento de la App](https://media.giphy.com/media/I3ugVaScFpDLvdjTva/giphy.gif)
 
 ## SERVIDOR NGINX
 
@@ -29,9 +33,9 @@
 - El resto de las consultas, redirigirlas a un servidor individual escuchando en el puerto 8080.
 - Verificar que todo funcione correctamente.
 
-![Video de funcionamiento de la App](https://media.giphy.com/media/3OoL7bdO4zc4XbdKyE/giphy.gif)
+![Video de funcionamiento de la App]()
 
 - Luego, modificar la configuración para que todas las consultas a /api/randoms sean redirigidas a un cluster de servidores gestionado desde nginx, repartiéndolas equitativamente entre 4 instancias escuchando en los puertos 8082, 8083, 8084 y 8085 respectivamente.
 
-![Video de funcionamiento de la App](https://media.giphy.com/media/3OoL7bdO4zc4XbdKyE/giphy.gif)
+![Video de funcionamiento de la App]()
 
