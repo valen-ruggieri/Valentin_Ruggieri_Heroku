@@ -30,12 +30,15 @@
 ## SERVIDOR NGINX
 
 - Redirigir todas las consultas a /api/randoms a un cluster de servidores escuchando en el puerto 8081. El cluster será creado desde node utilizando el módulo nativo cluster.
+
+![Video de funcionamiento de la App](https://media.giphy.com/media/U31Hl7Fdt0qaJ1jsbq/giphy.gif)
+
 - El resto de las consultas, redirigirlas a un servidor individual escuchando en el puerto 8080.
 - Verificar que todo funcione correctamente.
 
-![Video de funcionamiento de la App]()
+![Video de funcionamiento de la App](https://media.giphy.com/media/xUvPoKvQL2PgTjAJhO/giphy.gif)
 
 - Luego, modificar la configuración para que todas las consultas a /api/randoms sean redirigidas a un cluster de servidores gestionado desde nginx, repartiéndolas equitativamente entre 4 instancias escuchando en los puertos 8082, 8083, 8084 y 8085 respectivamente.
 
-![Video de funcionamiento de la App]()
+![Video de funcionamiento de la App](https://media.giphy.com/media/ndShgWpBhELRwOuRaO/giphy.gif)
 
