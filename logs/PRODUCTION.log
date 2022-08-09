@@ -1,1 +1,6 @@
 
+[2022-08-09T09:58:35.627] [WARN] PROD - Route "/" dont exist
+[2022-08-09T09:58:44.721] [WARN] PROD - Route "/asdsadadasd" dont exist
+[2022-08-09T09:58:54.581] [INFO] PROD - GET - /info
+[2022-08-09T09:58:58.083] [INFO] PROD - GET - /infozip
+[2022-08-09T09:59:07.988] [ERROR] PROD - Query for API failed
