@@ -19,7 +19,7 @@
   Enviar sólo los logs de error a un archivo llamada error.log
 
 
-![Video de funcionamiento de la App]()
+![Video de funcionamiento de la App](https://media.giphy.com/media/FQvJCvuLLYhN2W82TW/giphy.gif)
 
 
 ## ANÁLISIS COMPLETO DE PERFORMANCE
