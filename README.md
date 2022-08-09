@@ -6,7 +6,7 @@
 - Verificar sobre la ruta /info con y sin compresión, la diferencia de cantidad de bytes devueltos en un caso y otro.
 
 
-![Video de funcionamiento de la App]()
+![Video de funcionamiento de la App](https://media.giphy.com/media/my0jbmncaGrFbJZyTK/giphy.gif)
 
 - Implementar loggueo (con alguna librería vista en clase) que registre lo siguiente:
   Ruta y método de todas las peticiones recibidas por el servidor (info)
