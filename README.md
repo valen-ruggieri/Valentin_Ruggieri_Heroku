@@ -1,4 +1,4 @@
-# Valentin_Ruggieri_Authorization_PROXY_And_NGINX
+# Valentin_Ruggieri_Loggers_Profiling_Debugs
 
 ## LOGGERS Y GZIP
 
@@ -30,13 +30,15 @@
 
 1 -  El perfilamiento del servidor, realizando el test con --prof de node.js. Analizar los resultados obtenidos luego de procesarlos con --prof-process. 
 - Utilizaremos como test de carga Artillery en línea de comandos, emulando 50 conexiones concurrentes con 20 request por cada una. Extraer un reporte con los resultados en archivo de texto.
-- Luego utilizaremos Autocannon en línea de comandos, emulando 100 conexiones concurrentes realizadas en un tiempo de 20 segundos. Extraer un reporte con los resultados (puede ser un print screen de la consola)
 
-![Video de funcionamiento de la App]()
+
+![Video de funcionamiento de la App](https://media.giphy.com/media/8zMab6Jb8Z7qPpo9qk/giphy.gif)
+
+- Luego utilizaremos Autocannon en línea de comandos, emulando 100 conexiones concurrentes realizadas en un tiempo de 20 segundos. Extraer un reporte con los resultados (puede ser un print screen de la consola)
 
 2 - El perfilamiento del servidor con el modo inspector de node.js --inspect. Revisar el tiempo de los procesos menos performantes sobre el archivo fuente de inspección.
 
-![Video de funcionamiento de la App]()
+![Video de funcionamiento de la App](https://media.giphy.com/media/tJA6t72LS3bTRzgc4g/giphy.gif)
 
 3 -  El diagrama de flama con 0x, emulando la carga con Autocannon con los mismos parámetros anteriores.
 
