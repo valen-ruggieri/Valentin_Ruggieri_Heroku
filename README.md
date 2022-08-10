@@ -24,8 +24,11 @@
 
 ## ANÁLISIS COMPLETO DE PERFORMANCE
 
-### Vamos a trabajar sobre la ruta '/info', en modo fork, agregando ó extrayendo un console.log de la información colectada antes de devolverla al cliente. ### Además desactivaremos el child_process de la ruta '/randoms'
-### Para ambas condiciones (con o sin console.log) en la ruta '/info' OBTENER:
+### Vamos a trabajar sobre la ruta '/info', en modo fork, agregando ó extrayendo un console.log de la información colectada antes de devolverla al cliente. 
+
+#### Además desactivaremos el child_process de la ruta '/randoms'
+
+#### Para ambas condiciones (con o sin console.log) en la ruta '/info' OBTENER:
 
 
 1 -  El perfilamiento del servidor, realizando el test con --prof de node.js. Analizar los resultados obtenidos luego de procesarlos con --prof-process. 
@@ -42,9 +45,9 @@
 
 3 -  El diagrama de flama con 0x, emulando la carga con Autocannon con los mismos parámetros anteriores.
 
-![Video de funcionamiento de la App]()
+![Video de funcionamiento de la App](https://media.giphy.com/media/tJA6t72LS3bTRzgc4g/giphy.gif)
+![Video de funcionamiento de la App](https://media.giphy.com/media/uDdXWDMgCeFF4XZZc5/giphy.gif)
 
-4 - Realizar un informe en formato pdf sobre las pruebas realizadas incluyendo los resultados de todos los test (texto e imágenes). 
 
-![Video de funcionamiento de la App]()
+
 
