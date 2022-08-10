@@ -46,6 +46,8 @@
 3 -  El diagrama de flama con 0x, emulando la carga con Autocannon con los mismos parámetros anteriores.
 
 ![Video de funcionamiento de la App](https://media.giphy.com/media/tJA6t72LS3bTRzgc4g/giphy.gif)
+
+
 ![Video de funcionamiento de la App](https://media.giphy.com/media/uDdXWDMgCeFF4XZZc5/giphy.gif)
 
 
