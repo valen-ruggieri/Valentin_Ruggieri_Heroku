@@ -1,18 +1,12 @@
 const express = require("express");
 const routerInfo = express.Router();
-const numCPUs = require("os").cpus().length;
-const compression = require("compression");
-const pid = process.pid;
-const info = `Number of proccess:${numCPUs} in ${pid}`;
-const logger = require("../../utils/loggers/loggers");
 
-routerInfo.get("/infozip", compression(), (req, res) => {
-  logger.info(`GET - ${req.path}`);
-  res.render("logger.ejs", { color: "success", text: `GET - ${req.path}` });
+routerInfo.get("/infobloq", (req, res) => {
+  console.log(`GET - ${req.path}`);
+  res.send(`GET - ${req.path}`);
 });
-routerInfo.get("/info", (req, res) => {
-  logger.info(`GET - ${req.path}`);
-  res.render("logger.ejs", { color: "success", text: `GET - ${req.path}` });
+routerInfo.get("/infonobloq", (req, res) => {
+  res.send(`GET - ${req.path}`);
 });
 
 module.exports = routerInfo;
