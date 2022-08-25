@@ -11,7 +11,7 @@ routerInfo.get("/infonobloq", (req, res) => {
 });
 
 routerInfo.get("/mensaje", (req, res) => {
-  res.send(`Hola Node.js desde heroku deploy ✅✅✅`);
+  res.render('index.ejs');
 });
 
 
